@@ -17,16 +17,16 @@ class FizzBuzzAppTests: XCTestCase {
     
     func test_print_numberZero() {
         let sut = makeSUT()
-        let number = sut.print(0)
+        let result = sut.print(0)
         
-        XCTAssertEqual(number, "0")
+        XCTAssertEqual(result, "0")
     }
     
     func test_print_numberOne() {
         let sut = makeSUT()
-        let number = sut.print(1)
+        let result = sut.print(1)
         
-        XCTAssertEqual(number, "1")
+        XCTAssertEqual(result, "1")
     }
     
     private func makeSUT() -> FizzBuzzEngine {
