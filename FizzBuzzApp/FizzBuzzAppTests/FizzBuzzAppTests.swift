@@ -16,21 +16,20 @@ class FizzBuzzEngine {
 class FizzBuzzAppTests: XCTestCase {
     
     func test_print_numberZero() {
-        let sut = makeSUT()
-        let result = sut.print(0)
-        
-        XCTAssertEqual(result, "0")
+        expect(print: 0, expectedResult: "0")
     }
     
     func test_print_numberOne() {
-        let sut = makeSUT()
-        let result = sut.print(1)
-        
-        XCTAssertEqual(result, "1")
+        expect(print: 1, expectedResult: "1")
     }
     
     private func makeSUT() -> FizzBuzzEngine {
         let sut = FizzBuzzEngine()
         return sut
+    }
+    
+    private func expect(print number: Int, expectedResult: String) {
+        let sut = makeSUT()
+        XCTAssertEqual(sut.print(number), expectedResult)
     }
 }
