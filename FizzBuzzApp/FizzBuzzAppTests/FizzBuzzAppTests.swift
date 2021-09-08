@@ -24,43 +24,35 @@ class FizzBuzzEngine {
 }
 
 class FizzBuzzAppTests: XCTestCase {
-    
-    func test_print_numberZero() {
+        
+    func test_print_number() {
         expect(print: 0, expectedResult: "0")
-    }
-    
-    func test_print_numberOne() {
         expect(print: 1, expectedResult: "1")
-    }
-    
-    func test_print_fizzWhenNumberIsThree() {
-        expect(print: 3, expectedResult: "Fizz")
+        expect(print: 2, expectedResult: "2")
+        expect(print: 4, expectedResult: "4")
+        expect(print: 7, expectedResult: "7")
+        expect(print: 11, expectedResult: "11")
     }
     
     func test_print_fizzWhenNumberIsMultipleOfThree() {
         expect(print: 3, expectedResult: "Fizz")
         expect(print: 6, expectedResult: "Fizz")
         expect(print: 9, expectedResult: "Fizz")
+        expect(print: 12, expectedResult: "Fizz")
     }
-    
-    func test_print_buzzzWhenNumberIsFive() {
-        expect(print: 5, expectedResult: "Buzz")
-    }
-    
+
     func test_print_buzzWhenNumberIsMultipleOfFive() {
+        expect(print: 5, expectedResult: "Buzz")
         expect(print: 10, expectedResult: "Buzz")
         expect(print: 20, expectedResult: "Buzz")
         expect(print: 25, expectedResult: "Buzz")
-    }
-    
-    func test_print_fizzbuzzzWhenNumberIsFifteen() {
-        expect(print: 15, expectedResult: "FizzBuzz")
     }
     
     func test_print_fizzbuzzWhenNumberIsMultipleOfFifteen() {
         expect(print: 15, expectedResult: "FizzBuzz")
         expect(print: 30, expectedResult: "FizzBuzz")
         expect(print: 45, expectedResult: "FizzBuzz")
+        expect(print: 60, expectedResult: "FizzBuzz")
     }
     
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> FizzBuzzEngine {
