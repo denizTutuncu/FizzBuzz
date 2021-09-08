@@ -12,11 +12,11 @@ class FizzBuzzEngine {
         
         if number == 0 {
             return "0"
-        } else  if number % 15 == 0 {
+        } else  if number.isMultiple(of: 15) {
             return "FizzBuzz"
-        } else if number % 5 == 0 {
+        } else if number.isMultiple(of: 5) {
             return "Buzz"
-        } else if number % 3 == 0 {
+        } else if number.isMultiple(of: 3) {
             return "Fizz"
         }
         return "\(number)"
