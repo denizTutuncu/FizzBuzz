@@ -41,6 +41,6 @@ class FizzBuzzAppTests: XCTestCase {
     }
 
     private func expect(print number: Int, expectedResult: String, file: StaticString = #file, line: UInt = #line) {
-        XCTAssertEqual(FizzBuzzEngine.parse(number), expectedResult, file: file, line: line)
+        XCTAssertEqual(FizzBuzzPaser.parse(number), expectedResult, file: file, line: line)
     }
 }

@@ -5,7 +5,7 @@
 //  Created by Deniz Tutuncu on 9/8/21.
 //
 
-public class FizzBuzzEngine {
+public class FizzBuzzPaser {
     public static func parse(_ number: Int) -> String {
         
         if number == 0 {
