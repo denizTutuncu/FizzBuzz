@@ -9,12 +9,17 @@ import XCTest
 
 class FizzBuzzEngine {
     func print(_ number: Int) -> String {
+        
         if number == 0 {
             return "0"
         }
         
         if number % 3 == 0 {
             return "Fizz"
+        }
+        
+        if number == 5 {
+            return "Buzz"
         }
         
         return "\(number)"
@@ -41,6 +46,10 @@ class FizzBuzzAppTests: XCTestCase {
         multiplesOfThree.forEach { number in
             expect(print: number, expectedResult: "Fizz")
         }
+    }
+    
+    func test_print_buzzzWhenNumberIsFive() {
+        expect(print: 5, expectedResult: "Buzz")
     }
     
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> FizzBuzzEngine {
