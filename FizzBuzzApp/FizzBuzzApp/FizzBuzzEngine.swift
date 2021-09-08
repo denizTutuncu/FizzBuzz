@@ -6,7 +6,7 @@
 //
 
 public class FizzBuzzEngine {
-    public static func print(_ number: Int) -> String {
+    public static func parse(_ number: Int) -> String {
         
         if number == 0 {
             return "0"
