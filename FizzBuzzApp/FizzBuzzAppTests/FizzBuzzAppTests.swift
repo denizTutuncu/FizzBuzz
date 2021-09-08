@@ -62,6 +62,7 @@ class FizzBuzzAppTests: XCTestCase {
     
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> FizzBuzzEngine {
         let sut = FizzBuzzEngine()
+        trackForMemoryLeaks(sut)
         return sut
     }
     
