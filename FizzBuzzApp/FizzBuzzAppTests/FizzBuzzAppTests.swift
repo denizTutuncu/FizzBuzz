@@ -7,6 +7,14 @@
 
 import XCTest
 
-class FizzBuzzAppTests: XCTestCase {
+class FizzBuzzEngine {
+ 
+}
 
+class FizzBuzzAppTests: XCTestCase {
+    
+    private func makeSUT() -> FizzBuzzEngine {
+        let sut = FizzBuzzEngine()
+        return sut
+    }
 }
