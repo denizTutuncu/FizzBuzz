@@ -6,22 +6,7 @@
 //
 
 import XCTest
-
-class FizzBuzzEngine {
-    static func print(_ number: Int) -> String {
-        
-        if number == 0 {
-            return "0"
-        } else  if number.isMultiple(of: 15) {
-            return "FizzBuzz"
-        } else if number.isMultiple(of: 5) {
-            return "Buzz"
-        } else if number.isMultiple(of: 3) {
-            return "Fizz"
-        }
-        return "\(number)"
-    }
-}
+import FizzBuzzApp
 
 class FizzBuzzAppTests: XCTestCase {
         

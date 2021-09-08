@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E8F9D7E26E959400026D8CE /* FizzBuzzApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8F9D7426E959400026D8CE /* FizzBuzzApp.framework */; };
 		2E8F9D8326E959400026D8CE /* FizzBuzzAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F9D8226E959400026D8CE /* FizzBuzzAppTests.swift */; };
+		2E8F9D9126E97CF40026D8CE /* FizzBuzzEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F9D9026E97CF40026D8CE /* FizzBuzzEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		2E8F9D7D26E959400026D8CE /* FizzBuzzAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8F9D8226E959400026D8CE /* FizzBuzzAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzAppTests.swift; sourceTree = "<group>"; };
 		2E8F9D8426E959400026D8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8F9D9026E97CF40026D8CE /* FizzBuzzEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8F9D7826E959400026D8CE /* Info.plist */,
+				2E8F9D9026E97CF40026D8CE /* FizzBuzzEngine.swift */,
 			);
 			path = FizzBuzzApp;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				TargetAttributes = {
 					2E8F9D7326E959400026D8CE = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					2E8F9D7C26E959400026D8CE = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -190,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8F9D9126E97CF40026D8CE /* FizzBuzzEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +341,7 @@
 		2E8F9D8926E959400026D8CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -353,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.FizzBuzzApp;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -360,6 +367,7 @@
 		2E8F9D8A26E959400026D8CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -384,6 +392,7 @@
 		2E8F9D8C26E959400026D8CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9DGMQB3935;
@@ -402,6 +411,7 @@
 		2E8F9D8D26E959400026D8CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9DGMQB3935;
