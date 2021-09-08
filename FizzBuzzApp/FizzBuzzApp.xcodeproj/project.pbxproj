@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2E8F9D7E26E959400026D8CE /* FizzBuzzApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8F9D7426E959400026D8CE /* FizzBuzzApp.framework */; };
 		2E8F9D8326E959400026D8CE /* FizzBuzzAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F9D8226E959400026D8CE /* FizzBuzzAppTests.swift */; };
-		2E8F9D8F26E96CC50026D8CE /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F9D8E26E96CC50026D8CE /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +27,6 @@
 		2E8F9D7D26E959400026D8CE /* FizzBuzzAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8F9D8226E959400026D8CE /* FizzBuzzAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzAppTests.swift; sourceTree = "<group>"; };
 		2E8F9D8426E959400026D8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E8F9D8E26E96CC50026D8CE /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 			children = (
 				2E8F9D8226E959400026D8CE /* FizzBuzzAppTests.swift */,
 				2E8F9D8426E959400026D8CE /* Info.plist */,
-				2E8F9D8E26E96CC50026D8CE /* XCTestCase+MemoryLeakTracking.swift */,
 			);
 			path = FizzBuzzAppTests;
 			sourceTree = "<group>";
@@ -201,7 +198,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8F9D8326E959400026D8CE /* FizzBuzzAppTests.swift in Sources */,
-				2E8F9D8F26E96CC50026D8CE /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
