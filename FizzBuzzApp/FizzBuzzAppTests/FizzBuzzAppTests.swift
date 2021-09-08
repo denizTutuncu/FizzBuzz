@@ -8,7 +8,7 @@
 import XCTest
 
 class FizzBuzzEngine {
-    func print(_ number: Int) -> String {
+    static func print(_ number: Int) -> String {
         
         if number == 0 {
             return "0"
@@ -54,15 +54,8 @@ class FizzBuzzAppTests: XCTestCase {
         expect(print: 45, expectedResult: "FizzBuzz")
         expect(print: 60, expectedResult: "FizzBuzz")
     }
-    
-    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> FizzBuzzEngine {
-        let sut = FizzBuzzEngine()
-        trackForMemoryLeaks(sut)
-        return sut
-    }
-    
+
     private func expect(print number: Int, expectedResult: String, file: StaticString = #file, line: UInt = #line) {
-        let sut = makeSUT(file: file, line: line)
-        XCTAssertEqual(sut.print(number), expectedResult, file: file, line: line)
+        XCTAssertEqual(FizzBuzzEngine.print(number), expectedResult, file: file, line: line)
     }
 }
