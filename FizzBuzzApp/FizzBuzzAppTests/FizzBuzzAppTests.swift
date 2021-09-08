@@ -9,6 +9,9 @@ import XCTest
 
 class FizzBuzzEngine {
     func print(_ number: Int) -> String {
+        if number == 0 {
+            return "0"
+        }
         
         if number == 3 {
             return "Fizz"
