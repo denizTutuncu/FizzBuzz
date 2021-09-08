@@ -12,20 +12,13 @@ class FizzBuzzEngine {
         
         if number == 0 {
             return "0"
-        }
-        
-        if number % 15 == 0 {
+        } else  if number % 15 == 0 {
             return "FizzBuzz"
-        }
-        
-        if number % 5 == 0 {
+        } else if number % 5 == 0 {
             return "Buzz"
-        }
-        
-        if number % 3 == 0 {
+        } else if number % 3 == 0 {
             return "Fizz"
         }
-
         return "\(number)"
     }
 }
