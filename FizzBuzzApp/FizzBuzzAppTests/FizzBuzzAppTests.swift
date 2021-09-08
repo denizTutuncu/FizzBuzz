@@ -9,7 +9,7 @@ import XCTest
 
 class FizzBuzzEngine {
     func print(_ number: Int) -> String {
-        return "0"
+        return "\(number)"
     }
 }
 
@@ -20,6 +20,13 @@ class FizzBuzzAppTests: XCTestCase {
         let number = sut.print(0)
         
         XCTAssertEqual(number, "0")
+    }
+    
+    func test_print_numberOne() {
+        let sut = makeSUT()
+        let number = sut.print(1)
+        
+        XCTAssertEqual(number, "1")
     }
     
     private func makeSUT() -> FizzBuzzEngine {
