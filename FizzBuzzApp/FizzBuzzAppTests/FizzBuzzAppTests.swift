@@ -38,11 +38,9 @@ class FizzBuzzAppTests: XCTestCase {
     }
     
     func test_print_fizzWhenNumberIsMultipleOfThree() {
-        let multiplesOfThree = [3, 6, 9]
-        
-        multiplesOfThree.forEach { number in
-            expect(print: number, expectedResult: "Fizz")
-        }
+        expect(print: 3, expectedResult: "Fizz")
+        expect(print: 6, expectedResult: "Fizz")
+        expect(print: 9, expectedResult: "Fizz")
     }
     
     func test_print_buzzzWhenNumberIsFive() {
@@ -50,11 +48,9 @@ class FizzBuzzAppTests: XCTestCase {
     }
     
     func test_print_buzzWhenNumberIsMultipleOfFive() {
-        let multiplesOfFive = [10, 20, 25]
-        
-        multiplesOfFive.forEach { number in
-            expect(print: number, expectedResult: "Buzz")
-        }
+        expect(print: 10, expectedResult: "Buzz")
+        expect(print: 20, expectedResult: "Buzz")
+        expect(print: 25, expectedResult: "Buzz")
     }
     
     func test_print_fizzbuzzzWhenNumberIsFifteen() {
@@ -62,11 +58,9 @@ class FizzBuzzAppTests: XCTestCase {
     }
     
     func test_print_fizzbuzzWhenNumberIsMultipleOfFifteen() {
-        let multiplesOfFive = [15, 30, 45]
-        
-        multiplesOfFive.forEach { number in
-            expect(print: number, expectedResult: "FizzBuzz")
-        }
+        expect(print: 15, expectedResult: "FizzBuzz")
+        expect(print: 30, expectedResult: "FizzBuzz")
+        expect(print: 45, expectedResult: "FizzBuzz")
     }
     
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> FizzBuzzEngine {
