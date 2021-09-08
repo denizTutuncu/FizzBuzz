@@ -18,7 +18,7 @@ class FizzBuzzEngine {
             return "Fizz"
         }
         
-        if number == 5 {
+        if number % 5 == 0 {
             return "Buzz"
         }
         
@@ -50,6 +50,14 @@ class FizzBuzzAppTests: XCTestCase {
     
     func test_print_buzzzWhenNumberIsFive() {
         expect(print: 5, expectedResult: "Buzz")
+    }
+    
+    func test_print_buzzWhenNumberIsMultipleOfFive() {
+        let multiplesOfFive = [10, 20, 25]
+        
+        multiplesOfFive.forEach { number in
+            expect(print: number, expectedResult: "Buzz")
+        }
     }
     
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> FizzBuzzEngine {
