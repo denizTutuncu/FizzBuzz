@@ -13,7 +13,7 @@ class FizzBuzzEngine {
             return "0"
         }
         
-        if number == 3 {
+        if number % 3 == 0 {
             return "Fizz"
         }
         
@@ -33,6 +33,14 @@ class FizzBuzzAppTests: XCTestCase {
     
     func test_print_fizzWhenNumberIsThree() {
         expect(print: 3, expectedResult: "Fizz")
+    }
+    
+    func test_print_fizzWhenNumberIsMultipleOfThree() {
+        let multiplesOfThree = [3, 6, 9]
+        
+        multiplesOfThree.forEach { number in
+            expect(print: number, expectedResult: "Fizz")
+        }
     }
     
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> FizzBuzzEngine {
