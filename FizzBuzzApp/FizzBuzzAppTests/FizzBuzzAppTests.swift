@@ -23,13 +23,13 @@ class FizzBuzzAppTests: XCTestCase {
         expect(print: 1, expectedResult: "1")
     }
     
-    private func makeSUT() -> FizzBuzzEngine {
+    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> FizzBuzzEngine {
         let sut = FizzBuzzEngine()
         return sut
     }
     
-    private func expect(print number: Int, expectedResult: String) {
-        let sut = makeSUT()
-        XCTAssertEqual(sut.print(number), expectedResult)
+    private func expect(print number: Int, expectedResult: String, file: StaticString = #file, line: UInt = #line) {
+        let sut = makeSUT(file: file, line: line)
+        XCTAssertEqual(sut.print(number), expectedResult, file: file, line: line)
     }
 }
